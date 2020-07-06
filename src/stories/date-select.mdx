@@ -1,0 +1,25 @@
+import {
+  Meta,
+  Story,
+  Preview,
+  Props,
+  Colors
+} from "@storybook/addon-docs/blocks";
+import {DateSelect} from "../componentlib";
+
+<Meta title="COMPONENTS" />
+
+# Compoent - Date Range Picker 
+
+<Preview withSource="none">
+    <Story name="Date Range Picker">
+        <div style={{height:'400px'}}>
+            <h2> A simple date range picker where we can select Start Date and an End Date </h2>
+            <DateSelect/>
+        </div>
+    </Story>
+</Preview>
+
+## Props - Date Range Picker
+
+<Props of={DateSelect}/>

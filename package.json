@@ -1,0 +1,62 @@
+{
+  "name": "webstorybook",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@storybook/addon-actions": "^5.3.14",
+    "@storybook/addon-docs": "^5.3.14",
+    "@storybook/addon-info": "^5.3.14",
+    "@storybook/addon-knobs": "^5.3.14",
+    "@storybook/addon-links": "^5.3.14",
+    "@storybook/addons": "^5.3.14",
+    "@storybook/preset-create-react-app": "^1.5.2",
+    "@storybook/react": "^5.3.14",
+    "@storybook/theming": "^5.3.14",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.1",
+    "@testing-library/user-event": "^7.2.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "node-sass": "^4.13.1",
+    "path": "^0.12.7",
+    "react": "^16.13.0",
+    "react-dates": "^21.8.0",
+    "react-dom": "^16.13.0",
+    "react-google-maps": "^9.4.5",
+    "react-icons": "^3.9.0",
+    "react-infinite-scroll-component": "^5.0.4",
+    "react-scripts": "^3.4.0",
+    "react-select": "^3.0.8",
+    "react-test-renderer": "^16.13.0",
+    "recompose": "^0.30.0",
+    "require-context.macro": "^1.2.2",
+    "styled-components": "^5.0.1",
+    "validator": "^12.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009",
+    "build-storybook": "build-storybook -c .storybook -o out",
+    "startServer": "node src/server"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,119 @@
+import {
+  Meta,
+  Story,
+  Preview,
+  Props,
+  Colors
+} from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import {
+  withKnobs,
+  text,
+  boolean,
+  number,
+  color,
+  object,
+  radios,
+  select
+} from "@storybook/addon-knobs";
+import { DefaultButton,PrimaryButton,SuccessButton,SecondaryButton,LinkButton,colors} from "../componentlib";
+
+
+<Meta title="UI|Buttons/Common" />
+
+# Button
+
+Button is the base button style.
+
+<Preview withSource='none'>
+<Story name="Default Button" parameters={{ decorators: [withKnobs] }}>
+  <DefaultButton 
+    label={text('Label','Click','Prop')}
+    showLoader={boolean('Show Loader',false,'Prop')} 
+    disabled={boolean('Disabled',false,'Prop')}
+    labelFontSize={text('Label Fontsize','18px','Style')}
+    btnBgColor={color('Background Color',colors.blueberry,'Style')}
+    disabledBgColor={color('Disabled Background Color',colors.brown_grey_one,'Style')}
+    labelColor={color('Label Color',colors.white,'Style')}
+    sectorColor={color('Loader Sector Color',colors.text_grey,'Style')}
+    ringColor={color('Loader Ring Color',colors.white_70,'Style')}
+    btnBorderRadius={text('Button border radius',"4em",'Style')}
+    btnPadding={text('Button padding',"2% 4%",'Style')}
+    />
+</Story>
+</Preview>
+
+## API
+
+<Props of={DefaultButton} />
+
+
+## Button Types
+
+> Following are the different button types.
+
+### Primary Button
+
+Primary Buttons are used with Primary actions.
+
+<Preview withSource='none'>
+<Story name="Primary Button" parameters={{ decorators: [withKnobs] }}>
+  <PrimaryButton 
+    label="Primary" 
+    showLoader={boolean('Show Loader',false,'Prop')} 
+    disabled={boolean('Disabled',false,'Prop')}
+    />
+</Story>
+</Preview>
+
+#### Props
+
+<Props of={PrimaryButton} />
+
+### Secondary Button
+
+<Preview withSource='none'>
+<Story name="Secondary Button">
+  <SecondaryButton 
+    label="Secondary" 
+    showLoader={boolean('Show Loader',false,'Prop')} 
+    disabled={boolean('Disabled',false,'Prop')}
+  />
+</Story>
+</Preview>
+
+#### Props
+
+<Props of={SecondaryButton} />
+
+### Link Button
+
+<Preview withSource='none'>
+<Story name="Link Button">
+  <LinkButton 
+    label="Link" 
+    showLoader={boolean('Show Loader',false,'Prop')} 
+    disabled={boolean('Disabled',false,'Prop')}
+  />
+</Story>
+</Preview>
+
+#### Props
+
+<Props of={LinkButton} />
+
+### Success Button
+
+<Preview withSource='none'>
+<Story name="Success Button" parameters={{ decorators: [withKnobs] }}>
+  <SuccessButton 
+    label="success button" 
+    showLoader={boolean('Show Loader',false,'Prop')} 
+    disabled={boolean('Disabled',false,'Prop')}
+  />
+</Story>
+</Preview>
+
+#### Props
+
+<Props of={SuccessButton} />

@@ -1,0 +1,3 @@
+[submodule "src/componentlib"]
+	path = src/componentlib
+	url = git@bitbucket.org:wicked-ride/componentlib.git

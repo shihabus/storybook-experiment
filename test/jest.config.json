@@ -1,0 +1,9 @@
+{
+  "testRegex": "((\\.|/*.)(snapshot))\\.js?$",
+  "rootDir": "..",
+  "setupTestFrameworkScriptFile": "<rootDir>/test/jest.setup.js",
+  "transform": {
+    "^.+\\.[tj]sx?$": "babel-jest",
+    "^.+\\.mdx$": "@storybook/addon-docs/jest-transform-mdx"
+  }
+}

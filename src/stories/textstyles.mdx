@@ -1,0 +1,205 @@
+import {
+  Meta,
+  Story,
+  Preview,
+  Props,
+  Colors
+} from "@storybook/addon-docs/blocks";
+import {
+  TextStyle,
+  TextStyle2,
+  TextStyle3,
+  TextStyle4,
+  TextStyle5,
+  TextStyle6,
+  TextStyle7,
+  TextStyle8,
+  TextStyle9,
+  TextStyle10,
+  TextStyle11,
+  TextStyle12,
+  TextStyle13,
+  TextStyle14,
+  TextStyle15,
+  TextStyle16,
+  TextStyle17,
+  TextStyle18,
+  TextStyle19,
+  TextStyle20,
+  TextStyle21,
+  TextStyle22,
+  TextStyle23,
+  TextStyle24,
+  TextStyle25,
+  TextStyle26,
+  TextStyle27,
+  TextStyle28,
+  TextStyle29,
+  TextStyle30,
+  TextStyle31,
+  TextStyle32,
+  TextStyle33
+} from "../componentlib";
+
+<Meta title="ASSETS|Typography" />
+
+# TEXT STYLES
+
+export const TextStyleList=[
+  {
+    name:'TextStyle',
+    component:()=> <TextStyle>Text Style</TextStyle>
+  },
+  {
+    name:'TextStyle2',
+    component:()=><TextStyle2>Text Style 2</TextStyle2>
+  },
+  {
+    name:'TextStyle3',
+    component:()=><TextStyle3>Text Style 3</TextStyle3>
+  },
+  {
+    name:'TextStyle4',
+    component:()=><TextStyle4>Text Style 4</TextStyle4>
+  },
+  {
+    name:'TextStyle5',
+    component:()=><TextStyle5>Text Style 5</TextStyle5>
+  },
+  {
+    name:'TextStyle6',
+    component:()=><TextStyle6>Text Style 6</TextStyle6>
+  },
+  {
+    name:'TextStyle7',
+    component:()=><TextStyle7>Text Style 7</TextStyle7>
+  },
+  {
+    name:'TextStyle8',
+    component:()=><TextStyle8>Text Style 8</TextStyle8>
+  },
+  {
+    name:'TextStyle9',
+    component:()=><TextStyle9>Text Style 9</TextStyle9>
+  },
+  {
+    name:'TextStyle10',
+    component:()=><TextStyle10>Text Style 10</TextStyle10>
+  },
+  {
+    name:'TextStyle11',
+    component:()=><TextStyle11>Text Style 11</TextStyle11>
+  },
+  {
+    name:'TextStyle12',
+    component:()=><TextStyle12>Text Style 12</TextStyle12>
+  },
+  {
+    name:'TextStyle13',
+    component:()=><TextStyle13>Text Style 13</TextStyle13>
+  },
+  {
+    name:'TextStyle14',
+    component:()=><TextStyle14>Text Style 14</TextStyle14>
+  },
+  {
+    name:'TextStyle15',
+    component:()=><TextStyle15>Text Style 15</TextStyle15>
+  },
+  {
+    name:'TextStyle16',
+    component:()=><TextStyle16>Text Style 16</TextStyle16>
+  },
+  {
+    name:'TextStyle17',
+    component:()=><TextStyle17>Text Style 17</TextStyle17>
+  },
+  {
+    name:'TextStyle18',
+    component:()=><TextStyle18>Text Style 18</TextStyle18>
+  },
+  {
+    name:'TextStyle19',
+    component:()=><TextStyle19>Text Style 19</TextStyle19>
+  },
+  {
+    name:'TextStyle20',
+    component:()=><TextStyle20>Text Style 20</TextStyle20>
+  },
+  {
+    name:'TextStyle21',
+    component:()=><TextStyle21>Text Style 21</TextStyle21>
+  },
+  {
+    name:'TextStyle22',
+    component:()=><TextStyle22>Text Style 22</TextStyle22>
+  },
+  {
+    name:'TextStyle23',
+    component:()=><TextStyle23>Text Style 23</TextStyle23>
+  },
+  {
+    name:'TextStyle24',
+    component:()=><TextStyle24>Text Style 24</TextStyle24>
+  },
+  {
+    name:'TextStyle25',
+    component:()=><TextStyle25>Text Style 25</TextStyle25>
+  },
+  {
+    name:'TextStyle26',
+    component:()=><TextStyle26>Text Style 26</TextStyle26>
+  },
+  {
+    name:'TextStyle27',
+    component:()=><TextStyle27>Text Style 27</TextStyle27>
+  },
+  {
+    name:'TextStyle28',
+    component:()=><TextStyle28>Text Style 28</TextStyle28>
+  },
+  {
+    name:'TextStyle29',
+    component:()=><TextStyle29>Text Style 29</TextStyle29>
+  },
+  {
+    name:'TextStyle30',
+    component:()=><TextStyle30>Text Style 30</TextStyle30>
+  },
+  {
+    name:'TextStyle31',
+    component:()=><TextStyle31>Text Style 31</TextStyle31>
+  },
+  {
+    name:'TextStyle32',
+    component:()=><TextStyle32>Text Style 32</TextStyle32>
+  },
+  {
+    name:'TextStyle33',
+    component:()=><TextStyle33>Text Style 33</TextStyle33>
+  }
+]
+
+<Preview withSource="none">
+    <table style={{width:'100%',border:'none'}}>
+      <tr style={{border:'none'}}>
+        <th style={{border:'none'}}>Name</th>
+        <th style={{border:'none'}}>Style</th>
+      </tr>
+      {
+        TextStyleList.map(style=>(
+          <tr style={{border:'none',padding:'4px'}}>
+            <td style={{border:'none'}}>
+              <p style={{
+                      fontFamily: 'Roboto',
+                      fontSize: '16px',
+                      fontWeight: '500',
+                      color: '#4b4b4b',
+                      textAlign:'left'
+                    }}>{style.name}</p></td>
+            <td style={{border:'none'}}>{style.component()}</td>
+          </tr>
+        ))
+      }
+    </table>
+</Preview>

@@ -1,0 +1,45 @@
+import {
+  Meta,
+  Story,
+  Preview,
+  Props,
+  Colors
+} from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import {
+  withKnobs,
+  text,
+  boolean,
+  number,
+  color,
+  object,
+  radios,
+  select
+} from "@storybook/addon-knobs";
+import { RefreshButton,colors } from '../componentlib'
+
+
+<Meta title='UI|Buttons'/>
+
+# Refresh Button
+
+<Preview withSource='none'>
+    <Story name="RefreshButton" parameters={{ decorators: [withKnobs] }}>
+        <RefreshButton 
+            isDisabled={boolean('Disabled',false,'Prop')}
+            isLoading={boolean('Loading',false,'Prop')}
+            label={text('Label','Refresh','Prop')}
+            loadingLabel={text('Loading Label','Refreshing...','Prop')}
+            secondaryText={text('Secondary Label','03 06 2019','Prop')}
+            btnBg={color('Background',colors.transparent,'Style')}
+            disabledColor={color('Inactive color',colors.brown_grey_one,'Style')}
+            activeColor={color('ActiveColor color',colors.blueberry,'Style')}
+        />
+    </Story>
+</Preview>
+
+## API
+
+> `secondaryText` is the last updated time stamp value
+
+<Props of={RefreshButton}/>

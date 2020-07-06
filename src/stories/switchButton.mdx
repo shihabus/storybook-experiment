@@ -1,0 +1,37 @@
+import {
+  Meta,
+  Story,
+  Preview,
+  Props,
+  Colors
+} from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import {
+  withKnobs,
+  text,
+  boolean,
+  color,
+} from "@storybook/addon-knobs";
+import { colors,SwitchButton, NewSwitch } from "../componentlib";
+
+
+<Meta title="UI|Buttons" />
+
+# Switch Button
+
+<Preview withSource='none'>
+    <Story name="Switch Button" parameters={{ decorators: [withKnobs] }}>
+        <SwitchButton 
+            isDisabled={boolean('Disabled',false,'Props')}
+            activeLabel={text('Active Label','ONLINE','Props')}
+            inActiveLabel={text('Inactive Label','OFFLINE','Props')}
+            activeBgColor={color('Active Color',colors.dark_lime_green,'Style')}
+            inActiveBgColor={color('Inactive Color',colors.grey_darkest_30,'Style')}
+            labelColor={color('Label Color',colors.text_grey,'Style')}
+        />
+    </Story>
+</Preview>
+
+## API
+
+<Props of={SwitchButton}/>
