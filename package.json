@@ -33,7 +33,7 @@
     "recompose": "^0.30.0",
     "require-context.macro": "^1.2.2",
     "styled-components": "^5.0.1",
-    "validator": "^12.2.0"
+    "validator": "^13.7.0"
   },
   "scripts": {
     "start": "react-scripts start",
